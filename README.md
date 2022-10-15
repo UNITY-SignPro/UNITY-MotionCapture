@@ -1,5 +1,8 @@
 # UNITY-MotionCapture
 
-여긴 이민우가 작업하는 공간입니다
 
-아직 아무것도 없음
+### new_text.ipynb  
+video to data
+
+### fbx_create.ipynb  
+data to animation
