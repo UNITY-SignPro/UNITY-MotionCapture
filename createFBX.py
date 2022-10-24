@@ -134,10 +134,18 @@ def Save_FBX(labels):
 
         pre_frame = fps + 1
 
-    # #fbx 저장
-    bpy.ops.export_scene.fbx(
-        filepath=bpy.path.abspath("test.fbx"),
-        use_active_collection=True,
+    bpy.data.actions[0].name = "anime"
+    # # #fbx 저장
+    # bpy.ops.export_scene.fbx(
+    #     filepath=bpy.path.abspath("test.fbx"),
+    #     use_active_collection=True,
+    # )
+
+    # gltf 저장
+    bpy.ops.export_scene.gltf(
+        filepath=bpy.path.abspath("test.gltf"),
+        # use_active_collection = True,
+        export_format = 'GLTF_EMBEDDED',
     )
     print(f"{label} is done")
 
